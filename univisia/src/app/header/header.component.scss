@@ -1,0 +1,20 @@
+@import "../../styles.scss";
+
+
+:host {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+@include resize-800-1100 (large-up) {
+    :host {
+        height: 120px;
+    }
+}
+
+@include resize-800-1100 (large-down) {
+    :host {
+        height: 60px;
+    }
+}

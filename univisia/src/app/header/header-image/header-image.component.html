@@ -1,0 +1,5 @@
+<img *ngIf="windowWidth > breakpoint" class="main-logo" src="../assets/images/logo_univisia.svg" alt="">
+
+<ng-container *ngIf="windowWidth < breakpoint">
+    <div class="main-logo {{currentPage}}"></div>
+</ng-container>

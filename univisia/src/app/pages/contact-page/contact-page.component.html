@@ -1,1 +1,61 @@
-<p>contact-page works!</p>
+<div class="contact-page" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div class="big-screens" *ngIf="windowWidth > breakpoint">
+        <!-- absolute positioned items -->
+        <h1 class="essentials text-tunnels">
+            Sharing<br>one <span class="text-orange">vision</span>
+        </h1>
+        <img class="center-letter" src="../../../assets/images/u_in_gray.svg" alt="">
+    
+        <!-- main content -->
+        <form class="contact-form">
+            <input type="text" placeholder="Name" maxlength="100" formControlName="name">
+            <input type="email" placeholder="Email" maxlength="100" formControlName="email">
+            <input type="number" placeholder="Phone number" maxlength="15" formControlName="phoneNumber">
+            <textarea placeholder="Text" class="free-text" maxlength="300" formControlName="notes"></textarea>
+            <button class="black-btn" type="submit">Send</button>
+        </form>
+        <img class="contact-bg bg-img" src="../../../assets/images/contact_bg.png" alt="">
+    
+        <!-- address  -->
+        <div class="address">
+            <span></span> <!-- do not remove -->
+            <div>
+                <p class="text-orange">Univisia</p>
+                <p>Volodymyra Velykoho 4</p>
+                <p>79053 Lviv, Ukraine</p>
+            </div>
+            <div>
+                <a href="mailto:info@univisia.com"><span class="text-orange">P</span> info@univisia.com</a>
+                <a href="tel:+380681857378"><span class="text-orange">M</span> +38068 185 7378</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="small-screens" *ngIf="windowWidth < breakpoint">
+        <div class="block">
+            <h5>Our address</h5>
+            <p>Volodymyra Velykoho 479053 Lviv, Ukraine</p>
+        </div>
+        <div class="inquires block">
+            <h5>For general inquires</h5>
+            <a href="mailto:info@univisia.com">info@univisia.com</a>
+            <a href="tel:+380681857378">+38068 185 7378</a>
+        </div>
+        <div class="block">
+            <h5>Social networks</h5>
+            <img class="fb" src="../../../assets/images/facebook.svg" alt="">
+            <img class="in" src="../../../assets/images/linkedin.svg" alt="">
+        </div>
+        <form class="form">
+            <h5>Write us a message</h5>
+            <input type="text" placeholder="Name" maxlength="100" formControlName="name">
+            <input type="email" placeholder="Email" maxlength="100" formControlName="email">
+            <input type="number" placeholder="Phone number" maxlength="15" formControlName="phoneNumber">
+            <textarea placeholder="Text" class="free-text" maxlength="300" formControlName="notes"></textarea>
+            <button class="arrow-btn text-tunnels" type="submit">
+                <img src="../../../assets/images/v_in_black.svg" alt="">
+                Send
+            </button>
+        </form>
+    </div>
+</div>

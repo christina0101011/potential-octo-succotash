@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'TT Tunnels';
+    src: url('TTTunnels-Thin.eot');
+    src: local('TT Tunnels Thin'), local('TTTunnels-Thin'),
+        url('TTTunnels-Thin.eot?#iefix') format('embedded-opentype'),
+        url('TTTunnels-Thin.woff2') format('woff2'),
+        url('TTTunnels-Thin.woff') format('woff'),
+        url('TTTunnels-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Tunnels';
+    src: url('TTTunnels-Bold.eot');
+    src: local('TT Tunnels Bold'), local('TTTunnels-Bold'),
+        url('TTTunnels-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TTTunnels-Bold.woff2') format('woff2'),
+        url('TTTunnels-Bold.woff') format('woff'),
+        url('TTTunnels-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Tunnels';
+    src: url('TTTunnels-Light.eot');
+    src: local('TT Tunnels Light'), local('TTTunnels-Light'),
+        url('TTTunnels-Light.eot?#iefix') format('embedded-opentype'),
+        url('TTTunnels-Light.woff2') format('woff2'),
+        url('TTTunnels-Light.woff') format('woff'),
+        url('TTTunnels-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Tunnels';
+    src: url('TTTunnels-Regular.eot');
+    src: local('TT Tunnels Regular'), local('TTTunnels-Regular'),
+        url('TTTunnels-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTTunnels-Regular.woff2') format('woff2'),
+        url('TTTunnels-Regular.woff') format('woff'),
+        url('TTTunnels-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Tunnels';
+    src: url('TTTunnels-Black.eot');
+    src: local('TT Tunnels Black'), local('TTTunnels-Black'),
+        url('TTTunnels-Black.eot?#iefix') format('embedded-opentype'),
+        url('TTTunnels-Black.woff2') format('woff2'),
+        url('TTTunnels-Black.woff') format('woff'),
+        url('TTTunnels-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+

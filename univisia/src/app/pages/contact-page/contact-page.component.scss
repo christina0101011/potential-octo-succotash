@@ -1,0 +1,153 @@
+@import "../../../styles.scss";
+
+$border-thickness: 2px;
+
+
+.big-screens {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    .contact-form {
+        width: calc(35vw - 150px);
+        min-width: 230px;
+        align-self: center;
+
+        input, .free-text {
+            height: 35px;
+            background-color: $silver;
+            border: none;
+            width: calc(100% - 40px);
+            margin-bottom: 17px;
+            padding: 0 20px;
+        }
+
+        .free-text {
+            resize: none;
+            height: 55px;
+            padding: 10px 20px;
+        }
+
+        .black-btn {
+            background-color: black;
+            color: white;
+            transition: background-color $transition;
+            border: none;
+            height: 35px;
+            width: 100%;
+            font-size: 16px;
+            
+            &:hover {
+                background-color: $orange;
+            }
+        }
+    }
+    
+    .contact-bg {
+        margin-top: 25px;
+    }
+    
+    .essentials {
+        position: absolute;
+        top: 110px;
+        left: 34vw;
+        margin: 0;
+        font-size: 130px;
+    }
+
+    .address {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40vw auto auto;
+        column-gap: 40px;
+        margin-top: 40px;
+        align-items: end;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.small-screens {
+    h5 {
+        margin: 0;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    .block {
+        padding: 25px 0;
+
+        .fb {
+           height: 15px; 
+           margin-right: 10px;
+        }
+
+        .in {
+            height: 20px;
+            margin-bottom: -3px;
+        }
+
+        p, a {
+            margin: 5px 0;
+        }
+    }
+
+    .inquires {
+        border-top: $border-thickness solid black;
+        border-bottom: $border-thickness solid black;
+    }
+
+    .form {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        h5 {
+            width: 100%;
+        }
+
+        input, .free-text {
+            width: 100%;
+            margin-top: 35px;
+            border: 0 solid black; 
+            border-bottom-width: $border-thickness;
+        }
+
+        .free-text {
+            resize: none;
+            margin-top: 20px;
+        }
+
+        .arrow-btn {
+            margin-top: 30px;
+            font-size: 40px;
+            border: none;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            transition: color $transition;
+            
+            img {
+                margin-right: 20px;
+                width: 25px;
+            }
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+}
+
+a {
+    display: block;
+}
+
+input, .free-text {       
+    &:focus, &:focus-visible {
+        outline: 0;
+    }
+}

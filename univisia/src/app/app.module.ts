@@ -16,6 +16,7 @@ import { CasesPagesComponent } from './pages/cases-pages/cases-pages.component';
 import { NavigationsComponent } from './navigation/navigations.component';
 import { HeaderImageComponent } from './header/header-image/header-image.component';
 import { HeaderComponent } from './header/header.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { HeaderComponent } from './header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,12 +9,16 @@
 
 @include resize-800-1100 (large-up) {
     :host {
-        height: 120px;
+        height: 90px;
+        padding: 0 150px 30px 60px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
     }
 }
 
 @include resize-800-1100 (large-down) {
     :host {
-        height: 60px;
+        padding: 25px 15px 25px 20px;
     }
 }

@@ -1,1 +1,114 @@
-<p>about-page works!</p>
+<div class="big-screens" *ngIf="windowWidth > breakpoint">
+    <div class="bg-text essentials">We are</div>
+
+    <div class="intro">
+        <h1 class="essentials">We<br>create<br>solutions</h1>
+        <p>
+            Univisia is a Ukraine-based software development and consulting 
+            company providing Azure cloud development and 
+            custom website development services for startups and established 
+            businesses, essentially helping them grow. Using cutting-edge technologies, 
+            we are motivated to build modern, functional and elegant digital solutions 
+            that solve real-world problems. 
+            With years of experience, we make technology simple.
+        </p>
+    </div>
+
+    <div class="features">
+        <div class="feature tech">
+            <img class="slash" src="../../../assets/images/slash.svg" alt="">
+            <p>
+                <span class="text-orange">Strong Technical Background</span><br>
+                90% of our team members are STEM 
+                graduates with extensive experience in 
+                cloud computing and website development. 
+                We are tech nerds and quickly learn new things.
+            </p>
+        </div>
+        <div class="feature azure">
+            <img class="arrow" src="../../../assets/images/v_in_orange.svg" alt="">
+            <p>
+                <span class="text-orange">Azure Advocates</span><br>
+                We love what we do and strongly believe in the future of cloud 
+                computing and Azure in particular. We follow best practices 
+                and also create innovative solutions.
+            </p>
+        </div>
+        <div class="feature speed">
+            <img class="cross" src="../../../assets/images/close_in_orange.svg" alt="">
+            <p>
+                <span class="text-orange">Rapid Development</span><br>
+                We put the business needs of our clients first. We are trying 
+                to be swift in hiring and diligent in reaching important 
+                milestones like demos, POC or MVP. We care about your 
+                time from day 1.
+            </p>
+        </div>
+        <div class="feature mng">
+            <img class="dot" src="../../../assets/images/dot.svg" alt="">
+            <p>
+                <span class="text-orange">Limited Management Overhead</span><br>
+                Our team members communicate directly with the clients to 
+                simplify the process, while the customers have greater 
+                control and reduced costs for the development.
+            </p>
+        </div>
+    </div>
+
+    <h4>Process</h4>
+    <div class="process">
+        <img src="../../../assets/images/dot.svg" alt="">
+        <p>Discuss needs and<br>requirements</p>
+        <p>Sign<br>contracts</p>
+        <p>Onboard<br>team members</p>
+        <p>Estimate time<br>and costs</p>
+        <p>Allocate or<br>hire resources</p>
+        <p>Work and<br>report regularly</p>
+        <img src="../../../assets/images/v_in_orange.svg" alt="">
+    </div>
+</div>
+
+<div class="small-screens" *ngIf="windowWidth < breakpoint">
+    <div class="page-img"></div>
+
+    <div class="features">
+        <div class="feature tech">
+            <img class="slash" src="../../../assets/images/slash.svg" alt="">
+            <p>Strong Technical Background</p>
+        </div>
+        <div class="feature azure">
+            <img class="arrow" src="../../../assets/images/v_in_orange.svg" alt="">
+            <p>Azure Advocates</p>
+        </div>
+        <div class="feature speed">
+            <img class="cross" src="../../../assets/images/pipe.svg" alt="">
+            <p>Rapid Development</p>
+        </div>
+        <div class="feature mng">
+            <img class="dot" src="../../../assets/images/dot.svg" alt="">
+            <p>Limited Management Overhead</p>
+        </div>
+    </div>
+
+    <div class="intro">
+        <h4><span class="text-orange">We create</span> solutions</h4>
+        <p>
+            Univisia is a Ukraine-based software development and consulting 
+            company providing Azure cloud development and custom website 
+            development services for startups and established businesses, 
+            essentially helping them grow. 
+        </p>
+    </div>
+
+    <h5>Process</h5>
+    <div class="process">
+        <img src="../../../assets/images/dot.svg" alt="">
+        <p>Discuss needs and<br>requirements</p>
+        <p>Sign contracts</p>
+        <p>Onboard<br>team members</p>
+        <p>Estimate time<br>and costs</p>
+        <p>Allocate or<br>hire resources</p>
+        <p>Work and<br>report regularly</p>
+        <img src="../../../assets/images/dot.svg" alt="">
+    </div>
+</div>

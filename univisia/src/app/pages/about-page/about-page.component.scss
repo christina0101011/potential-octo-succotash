@@ -1,0 +1,348 @@
+@import "../../../styles.scss";
+
+
+.big-screens {
+    position: relative;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .bg-text {
+        position: absolute;
+        z-index: -1;
+        font-family: "Tunnels";
+        color: $silver;
+        font-size: 42rem;
+        top: 100px;
+        white-space: nowrap;
+    }
+
+    .intro {
+        width: 38%;
+        
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .features {
+        width: calc(55% - 100px);
+        display: grid;
+        height: fit-content;
+        row-gap: 55px;
+        margin-right: 100px;
+        margin-top: 30px;
+
+        .tech {
+            grid-column: 1 / 3;
+            grid-row: 1;
+        }
+
+        .azure {
+            grid-column: 2 / 4;
+            grid-row: 2;
+        }
+
+        .speed {
+            grid-column: 1 / 3;
+            grid-row: 3;
+        }
+
+        .mng {
+            grid-column: 2 / 4;
+            grid-row: 4;
+        }
+
+        .feature {
+            display: flex;
+            height: fit-content;
+            align-items: center;
+            
+            p {
+                font-size: 14px;
+                margin-left: 20px;
+            }
+
+            .slash {
+                animation: rotate-90 .3s linear 1;
+                animation-fill-mode: forwards;
+                width: 75px;
+                height: 75px;
+            }
+            
+            .arrow {
+                animation: rotate-180 .3s linear 1;
+                animation-delay: .5s;
+                animation-fill-mode: forwards;
+                width: 75px;
+                height: 75px;
+            }
+            
+            .cross {
+                animation: rotate-180 .3s linear 1;
+                animation-delay: 1s;
+                animation-fill-mode: forwards;
+                width: 75px;
+                height: 75px;
+            }
+            
+            .dot {
+                animation: replace .3s linear 1;
+                animation-delay: 1.5s;
+                animation-fill-mode: forwards;
+                width: 20px;
+                height: 20px;
+                align-self: flex-start;
+            }
+        }
+    }
+
+    h4 {
+        margin: 100px 0 30px 0;
+    }
+
+    .process {
+        display: grid;
+        width: calc(100% - 80px);
+
+        p {
+            font-size: 14px;
+        }
+        // img 
+        > :nth-child(1) {
+            grid-column: 1;
+            grid-row: 1 / 3;
+            margin: auto 0;
+            width: 10px;
+            height: 10px;
+        }
+
+        > :nth-child(2) {
+            grid-row: 1;
+            grid-column: 2;
+            border-bottom: 10px solid black;
+            padding-bottom: 30px;
+        }
+        
+        > :nth-child(3) {
+            grid-row: 1;
+            grid-column: 4;
+            border-left: 10px solid $orange;
+            border-bottom: 10px solid black;
+            padding-bottom: 30px;
+            padding-left: 15px;
+        }
+        
+        > :nth-child(4) {
+            grid-row: 1;
+            grid-column: 6;
+            border-left: 10px solid $orange;
+            border-bottom: 10px solid black;
+            padding-bottom: 30px;
+            padding-left: 15px;
+        }
+        // row 2
+        > :nth-child(5) {
+            grid-row: 2;
+            grid-column: 3;
+            border-left: 10px solid $orange;
+            border-top: 10px solid black;
+            margin-top: -9.5px;
+            padding-top: 30px;
+            padding-left: 15px;
+        }
+        
+        > :nth-child(6) {
+            grid-row: 2;
+            grid-column: 5;
+            border-left: 10px solid $orange;
+            border-top: 10px solid black;
+            margin-top: -9.5px;
+            padding-top: 30px;
+            padding-left: 15px;
+        }
+        
+        > :nth-child(7) {
+            grid-row: 2;
+            grid-column: 7;
+            border-left: 10px solid $orange;
+            border-top: 10px solid black;
+            margin-top: -9.5px;
+            padding-top: 30px;
+            padding-left: 15px;
+        }
+        // img 
+        > :nth-child(8) {
+            grid-row: 1 / 3;
+            transform: rotate(180deg);
+            margin: auto;
+            width: 85px;
+            padding-right: 15px;
+        }
+    }
+}
+
+.small-screens {
+    .page-img {
+        background-image: url('../../../assets/images/about.png');
+        height: 240px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .features {
+        background-color: white;
+        margin: -20px 20px 20px 20px;
+        padding: 20px;
+        display: grid;
+        row-gap: 20px;
+        column-gap: 20px;
+
+        > :nth-child(3), > :nth-child(4) {
+            grid-row: 2;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 30px;
+                height: 30px;
+                
+                &.dot {
+                    height: 10px;
+                }
+            }
+
+            p {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .intro, h5, .process {
+        padding: 20px;
+    }
+
+    h5 {
+        padding-top: 30px;
+        margin: 0;
+    }
+
+    .process {
+        display: grid;
+        width: 300px;
+        margin: auto;
+
+        p {
+            font-size: 14px;
+        }
+        // img 
+        > :nth-child(1) {
+            grid-column: 1 / 3;
+            margin: auto;
+            padding-left: 20px;
+            padding-bottom: 10px;
+        }
+
+        > :nth-child(2) {
+            grid-column: 1;
+            grid-row: 2;
+            text-align: right;
+            border-right: 5px solid black;
+            border-bottom: 5px solid $orange;
+            padding-bottom: 7px;
+            padding-right: 10px;
+        }
+
+        > :nth-child(3) {
+            grid-column: 1;
+            grid-row: 4;
+            text-align: right;
+            border-right: 5px solid black;
+            border-bottom: 5px solid $orange;
+            padding-bottom: 7px;
+            padding-right: 10px;
+        }
+
+        > :nth-child(4) {
+            grid-column: 1;
+            grid-row: 6;
+            text-align: right;
+            border-right: 5px solid black;
+            border-bottom: 5px solid $orange;
+            padding-bottom: 7px;
+            padding-right: 10px;
+        }
+        
+        // row 2
+
+        > :nth-child(5) {
+            grid-column: 2;
+            grid-row: 3;
+            border-left: 5px solid black;
+            border-bottom: 5px solid $orange;
+            padding-bottom: 7px;
+            padding-left: 10px;
+            margin-left: -4.5px;
+        }
+
+        > :nth-child(6) {
+            grid-column: 2;
+            grid-row: 5;
+            border-left: 5px solid black;
+            border-bottom: 5px solid $orange;
+            padding-bottom: 7px;
+            padding-left: 10px;
+            margin-left: -4.5px;
+        }
+
+        > :nth-child(7) {
+            grid-column: 2;
+            grid-row: 7;
+            border-left: 5px solid black;
+            border-bottom: 5px solid $orange;
+            padding-bottom: 7px;
+            padding-left: 10px;
+            margin-left: -4.5px;
+        }
+        // img 
+        > :nth-child(8) {
+            grid-column: 1 / 3;
+            margin: auto;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+    }
+}
+
+@keyframes rotate-90 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rotate-180 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes replace {
+    0% {
+        align-self: flex-start;
+    }
+    100% {
+        align-self: flex-end;
+    }
+}

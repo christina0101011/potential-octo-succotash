@@ -1,15 +1,5 @@
-@font-face {
-    font-family: "Tunnels";
-    src: local("Tunnels"), url(./assets/fonts/font_tt_tunnels/TTTunnels-Bold.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Formular";
-    src: local("Formular"), url(./assets/fonts/font_formular/Formular.ttf) format("truetype");
-}
-
 // max content width 
-$max-width: 1500px;
+$max-width: 2000px;
 
 // colors
 $orange: #FB4000;
@@ -66,6 +56,8 @@ $transition: .3s;
 body {
     margin: 0;
     font-family: "Formular";
+    max-width: $max-width;
+    margin: auto;
 }
 
 a {
@@ -80,6 +72,12 @@ a {
 
 h5 {
     font-size: 25px;
+}
+
+h4 {
+    font-size: 48px;
+    font-family: "Tunnels";
+    margin: 10px;
 }
 
 p {
@@ -101,14 +99,20 @@ p {
 .center-letter {
     position: absolute;
     z-index: 1;
-    width: 15%;
-    right: 50.2vw;
+    width: 17%;
+    right: 46%;
 }
 
 .bg-img {
-    width: 55vw;
+    width: 51vw;
     height: auto;
+    
+    @media (min-width: 2000px) {
+        width: 53.5%;
+    }
 }
+
+
 
 // basic scroll 
 ::-webkit-scrollbar {
@@ -125,3 +129,16 @@ p {
     border-radius: 10px;
     background-color:#ADADAD;
 }
+
+
+
+@font-face {
+    font-family: "Tunnels";
+    src: local("Tunnels"), url(./assets/fonts/font_tt_tunnels/TTTunnels-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Formular";
+    src: local("Formular"), url(./assets/fonts/font_formular/Formular.ttf) format("truetype");
+}
+

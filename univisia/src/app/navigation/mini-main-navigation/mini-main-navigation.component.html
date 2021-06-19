@@ -1,1 +1,51 @@
-<p>mini-main-navigation works!</p>
+<img src="../../../assets/images/menu_icon.svg" alt=""
+    *ngIf="!menuOpen" (click)="menuOpen = !menuOpen">
+
+<div class="open-menu" *ngIf="menuOpen">
+    <div class="top">
+        <img src="../../../assets/images/menu.svg" alt="">
+        <img src="../../../assets/images/close.svg" alt="" (click)="menuOpen = !menuOpen">
+    </div>
+    <div class="menu-container">
+        <div class="menu-item">
+            <h4><a routerLinkActive="active" routerLink="/services" class="essentials">Servises</a></h4>
+            <div class="options" *ngIf="currentPage === 'services'">
+                <h5>Azure Services</h5>
+                <h5>Website Development</h5>
+                <h5>Service for Startups</h5>
+                <h5>IT Stuffing</h5>
+            </div>
+        </div>
+        <div class="menu-item">
+            <h4><a routerLinkActive="active" routerLink="/about" class="essentials">About us</a></h4>
+            <div class="options" *ngIf="currentPage === 'about'">
+                <h5>Azure Services</h5>
+                <h5>Website Development</h5>
+                <h5>Service for Startups</h5>
+                <h5>IT Stuffing</h5>
+            </div>
+        </div>
+        <div class="menu-item">
+            <h4><a routerLinkActive="active" routerLink="/cases" class="essentials">Cases</a></h4>
+            <div class="options" *ngIf="currentPage === 'cases'">
+                <h5>Azure Services</h5>
+                <h5>Website Development</h5>
+                <h5>Service for Startups</h5>
+                <h5>IT Stuffing</h5>
+            </div>
+        </div>
+        <div class="menu-item">
+            <h4><a routerLinkActive="active" routerLink="/contact" class="essentials">Contact</a></h4>
+            <div class="options" *ngIf="currentPage === 'contacts'">
+                <h5>Azure Services</h5>
+                <h5>Website Development</h5>
+                <h5>Service for Startups</h5>
+                <h5>IT Stuffing</h5>
+            </div>
+        </div>
+        <div class="publics">
+            <img class="fb" src="../../../assets/images/facebook.svg" alt="">
+            <img class="in" src="../../../assets/images/linkedin.svg" alt="">
+        </div>
+    </div>
+</div>

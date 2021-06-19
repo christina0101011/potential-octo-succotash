@@ -34,4 +34,9 @@
     .menu {
         background-image: url('../../../assets/images/menu.svg');
     }
+
+    :host {
+        display: flex;
+        justify-content: space-between;
+    }
 }

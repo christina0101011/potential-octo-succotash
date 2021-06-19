@@ -1,0 +1,84 @@
+@import "../../../styles.scss";
+
+
+.open-menu {
+    position: fixed;
+    z-index: 3;
+    width: calc(100% - 50px);
+    height: 100vh;
+    background-color: white;
+    left: 0;
+    top: 0;
+    padding: 25px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 30px;
+    border-bottom: 2px solid black;
+}
+
+.menu-container {
+    background-image: url('../../../assets/images/u_in_gray.svg');
+    width: 100%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin-top: 30px;
+
+    .menu-item {
+        margin: 30px 0;
+    }
+
+    a {
+        font-size: inherit;
+        margin-left: 10px;
+    }
+
+    a.active {
+        color: $orange;
+        display: flex;
+        align-items: baseline;
+        margin-left: -25px;
+
+        &::before {
+            display: block;
+            content: ' ';
+            background-image: url('../../../assets/images/rectangle_orange.svg');
+            height: 35px;
+            width: 17px;
+            margin-left: 15px;
+            margin-right: 5px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .options {
+        h5 {
+            font-weight: 100;
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+    }
+
+    .publics {
+        margin-left: 25px;
+
+        img {
+            margin-right: 15px;
+        }
+
+        .fb {
+            height: 15px; 
+            margin-right: 10px;
+         }
+ 
+         .in {
+             height: 20px;
+             margin-bottom: -3px;
+         }
+    }
+}

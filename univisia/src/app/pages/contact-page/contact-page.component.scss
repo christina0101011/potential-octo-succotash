@@ -9,7 +9,7 @@ $border-thickness: 2px;
     flex-wrap: wrap;
     
     .contact-form {
-        width: calc(35vw - 150px);
+        width: calc(40% - 150px);
         min-width: 230px;
         align-self: center;
 
@@ -44,13 +44,13 @@ $border-thickness: 2px;
     }
     
     .contact-bg {
-        margin-top: 25px;
+        margin-top: 30px;
     }
     
     .essentials {
         position: absolute;
-        top: 110px;
-        left: 34vw;
+        top: 125px;
+        left: 37%;
         margin: 0;
         font-size: 130px;
     }
@@ -58,7 +58,7 @@ $border-thickness: 2px;
     .address {
         width: 100%;
         display: grid;
-        grid-template-columns: 40vw auto auto;
+        grid-template-columns: 45% auto auto;
         column-gap: 40px;
         margin-top: 40px;
         align-items: end;

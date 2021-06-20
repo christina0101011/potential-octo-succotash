@@ -1,2 +1,31 @@
-<p>cases-page works!</p>
-
+<div class="cases-container">
+    <div class="cases" *ngFor="let case of cases; let idx = index" [@enterAnimation]>
+        <div class="description">
+            <h4 (click)="showContent = idx" [ngClass]="{active: showContent === idx}">{{ case.project }}</h4>
+            <div [@inOutAnimation] *ngIf="showContent === idx">
+                <div class="facts">
+                    <div class="title">
+                        <p class="text-orange">Client</p>
+                        <p class="text-orange">Years</p>
+                        <p class="text-orange">Industries</p>
+                        <p class="text-orange">Market</p>
+                        <p class="text-orange">Team Size</p>
+                        <p class="text-orange">Technologies</p>
+                    </div>
+                    <div class="details">
+                        <p>{{ case.client }}</p>
+                        <p>{{ case.years }}</p>
+                        <p>{{ case.industries }}</p>
+                        <p>{{ case.market }}</p>
+                        <p>{{ case.teamSize }}</p>
+                        <p>{{ case.technologies }}</p>
+                    </div>
+                </div>
+                <p class="detailed">{{ case.description }}</p>
+            </div>
+        </div>
+        <ng-container *ngIf="showContent === idx">
+            <div class="case-img" [ngStyle]="{'background-image': 'url('+case.image+')' || ''}"></div>
+        </ng-container>
+    </div>
+</div>

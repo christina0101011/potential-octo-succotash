@@ -1,0 +1,35 @@
+[
+    {
+       "project": "Cloud solutions for logistict company",
+       "client": "Logistics Startup, Cologne, Germany",
+       "years": "2018 - Present",
+       "industries": "Logistics",
+       "market": "Europe",
+       "teamSize": "2 engineers",
+       "technologies": "REST, SOAP, WCF, Azure Services",
+       "description": "We helped our client build a complex telematics platform that allows customers to improve their fleet management and logistics. The solution required integrations with hundreds of third-party providers, each with unique integration like REST, SOAP, WCF or FTP data transfer. With these integrations, each of the providers would send regular GPS tracker data updates to the customer system for hundreds of controlled vehicles. Our solution was built on top of Microsoft Azure, with heavy use of Azure Event Hub, and capable of consuming millions of positions data updates daily. Another challenging task was data normalization due to lots of different formats and schemas from all providers. Hence we implemented custom business logic to simplify the integration of new providers. Azure AppInsights was successfully used to warn about broken integrations and failures instantly.",
+       "image": "./assets/images/cloud.png"
+      },
+    {
+       "project": "Agritech startup from scratch",
+       "client": "Agritech Startup, Florida, US",
+       "years": "2020 - Present",
+       "industries": "Agriculture",
+       "market": "North America",
+       "teamSize": "7 engineers",
+       "technologies": "Azure, ASP.NET Core, Angular, SQL, EF, Web API",
+       "description": "Our customer’s startup idea was to disrupt the usual business in the produce industry by introducing a digital marketplace between growers and buyers. It was crucial to act quickly, and our team focused on delivering digital solutions for the business team before the critical deadlines. Within the first one and a half month, the team created serverless public data parsers and used the data to implement sophisticated price charts and landing pages that the customer successfully used as marketing materials for the new product. Later on, the team continued working on the actual marketplace product having scalability in mind. Microsoft Azure services are actively used in the project, including Azure Search for searching on the marketplace, Azure Blob Storage, to store lots of listing images and others. We have also configured Azure DevOps CI/CD to reduce the dev cycles and accelerate the pace of development which is critical for this startup.",
+       "image": "./assets/images/architect.png"
+      },
+    {
+       "project": "Team extention for finance company",
+       "client": "Membership Savings Company, US",
+       "years": "2019",
+       "industries": "Finance",
+       "market": "United States",
+       "teamSize": "2 engineers",
+       "technologies": "KendoUI, HTML, JS, ASP.NET MVC, SQL Server, EF",
+       "description": "Due to the quick expansion of the project and the new features needed to be ahead of its competitors, our client wanted to increase the team’s throughput and development pace. Two of our team members were able to join the client’s team within a week. Being highly skilled in .NET, ASP.NET MVC, SQL Server and Entity Framework, we could shorten the onboarding and knowledge transfer period. We produced quality work following design patterns and coding style aligned with the approach suggested by software architects on the client side. Most importantly, we were trying to be accurate with our estimates and always took our commitments seriously. After five months, when most of the essential features were successfully implemented, our team members were rolled off, first one, and a month later another.",
+       "image": "./assets/images/teams.png"
+      }
+]

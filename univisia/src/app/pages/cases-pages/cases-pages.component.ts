@@ -11,12 +11,14 @@ export class CasesPagesComponent implements OnInit, OnDestroy {
   private resizeSubscription: Subscription = new Subscription;
   public windowWidth = window.innerWidth;
   public breakpoint = this.mainServiceService.breakpoint;
+  public cases: any;
   
   constructor(private mainServiceService: MainServiceService) { }
 
   ngOnInit() {
     this.resizeSubscription = this.mainServiceService.onResize$
       .subscribe(size => this.windowWidth = size.innerWidth);
+    this.mainServiceService.getCases().subscribe(res => this.cases = res)
   }
 
   ngOnDestroy() {

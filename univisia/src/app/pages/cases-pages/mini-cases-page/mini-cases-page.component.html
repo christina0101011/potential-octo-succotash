@@ -1,1 +1,50 @@
-<p>mini-cases-page works!</p>
+<div class="cases-container" *ngIf="cases && cases.length">
+    <div class="cases">
+        <div class="description">
+            <h5>{{ cases[showContent]?.project }}</h5>
+                <div class="facts">
+                    <div class="block">
+                        <p class="text-orange">Client</p>
+                        <p>{{ cases[showContent]?.client }}</p>
+                    </div>
+                    <div class="block">
+                        <p class="text-orange">Years</p>
+                        <p>{{ cases[showContent]?.years }}</p>
+                    </div>
+                    <div class="block">
+                        <p class="text-orange">Industries</p>
+                        <p>{{ cases[showContent]?.industries }}</p>
+                    </div>
+                    <div class="block">
+                        <p class="text-orange">Market</p>
+                        <p>{{ cases[showContent]?.market }}</p>
+                    </div>
+                    <div class="block">
+                        <p class="text-orange">Team Size</p>
+                        <p>{{ cases[showContent]?.teamSize }}</p>
+                    </div>
+                    <div class="block">
+                        <p class="text-orange">Technologies</p>
+                        <p>{{ cases[showContent]?.technologies }}</p>
+                    </div>
+                </div>
+                <div class="case-img"
+                    [ngStyle]="{'background-image': 'url('+cases[showContent]?.image+')' || ''}"></div>
+                <p class="detailed">{{ cases[showContent]?.description }}</p>
+        </div>
+    </div>
+   <div class="buttons">
+       <div>
+           <button (click)="decrementIndex()" class="arrow-btn text-tunnels text-orange"
+               *ngIf="showContent > 0">
+               <img src="../../../../assets/images/v_in_orange.svg" alt="">
+               Back
+           </button>
+       </div>
+       <button (click)="incrementIndex()" class="arrow-btn text-tunnels next text-orange"
+           *ngIf="showContent !== cases.length - 1">
+           <img src="../../../../assets/images/v_in_orange.svg" alt="">
+           Next
+       </button>
+   </div> 
+</div>

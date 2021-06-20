@@ -1,6 +1,7 @@
 import { EventManager } from '@angular/platform-browser';
 import { Injectable } from '@angular/core';
 import { Subject, Observable, BehaviorSubject } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -14,9 +15,11 @@ export class MainServiceService {
     return this.resizeSubject.asObservable();
   }
 
-  private resizeSubject: Subject<Window>;
+  private resizeSubject: Subject<Window>; // use to hide html elements to remove them from dom
 
-  constructor(private eventManager: EventManager) {
+  constructor(
+    private eventManager: EventManager,
+    private http: HttpClient) {
     this.resizeSubject = new Subject();
     this.eventManager.addGlobalEventListener('window', 'resize', this.onResize.bind(this));
   }
@@ -25,5 +28,7 @@ export class MainServiceService {
     this.resizeSubject.next(<Window>event.target);
   }
 
-
+  getCases() {
+    return this.http.get('../assets/cases.json')
+  }
 }

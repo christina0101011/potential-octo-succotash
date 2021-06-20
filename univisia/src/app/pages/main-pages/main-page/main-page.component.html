@@ -1,1 +1,73 @@
-<p>main-page works!</p>
+<div class="services">    
+    <div class="bg-letter {{ currentService }}"></div>
+    
+    <div class="left-side">
+        <div class="service-list">
+            <h2 (mouseenter)="currentService = 'startups'" (click)="currentService = 'startups'"
+                [ngClass]="{active: currentService === 'startups'}">
+                Services for startups
+            </h2>
+            <h2 (mouseenter)="currentService = 'websites'" (click)="currentService = 'websites'"
+                [ngClass]="{active: currentService === 'websites'}">
+                Website development
+            </h2>
+            <h2 (mouseenter)="currentService = 'azure'" (click)="currentService = 'azure'"
+                [ngClass]="{active: currentService === 'azure'}">
+                Azure services
+            </h2>
+            <h2 (mouseenter)="currentService = 'stuffing'" (click)="currentService = 'stuffing'"
+                [ngClass]="{active: currentService === 'stuffing'}">
+                Tech stuffing
+            </h2>
+        </div>
+
+        <div class="service-description">
+            <p *ngIf="currentService === 'startups'" [@toggle]>
+                Our Azure and Website Development expertise works well for startups 
+                in industries like FinTech, AgriTech, BioTech and others. 
+                By understanding the “Start Small, Scale Fast” principle and with 
+                the power of cloud computing, we help startups reduce the time to 
+                market and then scale quickly. With best practices from Microsoft, 
+                our solutions are secure, robust and cost-effective. 
+            </p>
+            <p *ngIf="currentService === 'websites'" [@toggle]>
+                Our experience in website development is huge. We’ve built plenty 
+                of custom solutions for small startups and enterprise projects. 
+                The passion for learning new technologies always pushes us to 
+                create modern and reliable web applications. We are flexible to 
+                customer needs and follow the best approaches to deliver scalable 
+                but affordable solutions in time.
+            </p>
+            <p *ngIf="currentService === 'azure'" [@toggle]>
+                We practice Azure because we are Azure believers. 
+                The range of our Azure services includes migration to Azure, 
+                cloud-based websites, serverless apps, CI/CD pipelines configuration 
+                and integration of many Azure services like Azure Search, Storage, 
+                AppInsights and others. Our deep knowledge of Azure helps build stable 
+                and resilient solutions, reduce costs on IT infrastructure and speed 
+                up the development cycles.
+            </p>
+            <p *ngIf="currentService === 'stuffing'" [@toggle]>
+                Sometimes it is challenging to find skilled specialists in your area. 
+                That’s where we can help. Being located in Lviv/Ukraine and with instant 
+                access to an immense pool of professionals, you’ll enjoy the flexibility 
+                and how quickly we can increase or decrease the size of the extended team. 
+                Our focus is Microsoft stack including C#, SQL Server, EF, Typescript, 
+                Azure and Angular. Save time and efforts and delegate us to find and 
+                prefilter the best candidates for your needs.
+            </p>
+        </div>
+    
+        <button routerLink="/cases" class="black-btn" type="submit">Cases</button>
+    </div>
+
+    <div class="service-img" style="background-image: url('../../../../assets/images/contact_bg.png');" 
+        *ngIf="currentService === 'startups'" [@toggle]></div>
+    <div class="service-img" style="background-image: url('../../../../assets/images/web_dev.png');" 
+        *ngIf="currentService === 'websites'" [@toggle]></div>
+    <div class="service-img" style="background-image: url('../../../../assets/images/microsoft.png');" 
+        *ngIf="currentService === 'azure'" [@toggle]></div>
+    <div class="service-img" style="background-image: url('../../../../assets/images/staffing.png');" 
+        *ngIf="currentService === 'stuffing'" [@toggle]></div>
+</div>
+

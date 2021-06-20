@@ -1,0 +1,113 @@
+@import "../../../../styles.scss";
+
+
+.services {
+    display: grid;
+    grid-template-columns: 40% auto;
+    column-gap: 150px;
+    margin-top: 80px;
+    position: relative;
+}
+
+.service-list {
+    margin-top: 50px;
+}
+
+.service-img {
+    background-size: cover;
+    background-position: center
+}
+
+h2, .service-description, .black-btn {
+    margin-left: 50px;
+}
+
+h2.active {
+    display: flex;
+    align-items: baseline;
+
+    &::before {
+        display: block;
+        content: ' ';
+        background-image: url('../../../../assets/images/rectangle_orange.svg');
+        height: 35px;
+        width: 17px;
+        margin-left: -60px;
+        margin-right: 43.5px;
+        background-repeat: no-repeat;
+    }
+}
+
+.service-description {
+    height: 230px;
+}
+
+.black-btn {
+    background-color: black;
+    color: white;
+    transition: background-color $transition;
+    border: none;
+    height: 35px;
+    width: 100px;
+    font-size: 16px;
+    
+    &:hover {
+        background-color: $orange;
+    }
+}
+
+.bg-letter {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    &.startups {
+        width: 15%;
+        left: 40.5%;
+        background-image: url('../../../../assets/images/S.svg');
+
+        @media (min-width: 1900px) {
+            right: 46%;
+            height: 90%;
+            left: initial;
+        }
+    }
+
+    &.websites {
+        background-image: url('../../../../assets/images/W.svg');
+        width: 25%;
+        left: 37.5%;
+
+        @media (min-width: 1900px) {
+            right: 38.5%;
+            height: 90%;
+            left: initial;
+        }
+    }
+
+    &.azure {
+        background-image: url('../../../../assets/images/A.svg');
+        width: 20%;
+        left: 40.5%;
+        
+        @media (min-width: 1900px) {
+            right: 40%;
+            height: 90%;
+            left: initial;
+        }
+    }
+
+    &.stuffing {
+        background-image: url('../../../../assets/images/T.svg');
+        width: 18%;
+        left: 41.5%;
+        
+        @media (min-width: 1900px) {
+            right: 41.5%;
+            height: 90%;
+            left: initial;
+        }
+    }
+}

@@ -11,7 +11,7 @@ export class MiniMainPageComponent implements OnInit {
   constructor(private mainServiceService: MainServiceService) { }
 
   ngOnInit(): void {
-    this.mainServiceService.currentPage.next('services')
+    this.mainServiceService.currentPage.next('main')
   }
 
 }

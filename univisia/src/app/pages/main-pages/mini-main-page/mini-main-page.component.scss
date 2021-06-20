@@ -1,0 +1,112 @@
+.azure-services {
+    height: 200px;
+    width: 100%;
+    background-image: url('../../../../assets/images/contact_bg.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.azure-description {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 20px;
+    width: 100%;
+    align-items: flex-start;
+    
+    h4 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin-left: 50px;
+        position: relative;
+
+        &::before {
+            display: block;
+            content: ' ';
+            background-image: url('../../../../assets/images/rectangle_orange.svg');
+            height: 35px;
+            width: 17px;
+            position: absolute;
+            left: -20px;
+            top: 8px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .details {
+        padding: 20px;
+        margin-top: -40px;
+        background-color: white;
+        margin-right: 10px;
+
+        h5 {
+            margin: 0 0 10px 0;
+        }
+    }
+}
+
+.webdev, .stuffing {
+    display: grid;
+    grid-template-columns: 1.1fr 1.5fr;
+    column-gap: 30px;
+    margin-top: 30px;
+    align-items: center;
+    margin-left: -20px;
+    
+    img {
+        grid-row: 1 / 3;
+        grid-column: 1;
+        background-size: contain;
+        width: 100%;
+    }
+    
+    h4 {
+        grid-row: 1;
+        grid-column: 2;
+        align-self: flex-end;
+    }
+
+    .details {
+        padding: 20px;
+        margin-left: -60px;
+        background-color: white;
+        height: fit-content;
+
+        h5 {
+            margin: 0 0 10px 0;
+        }
+    } 
+}
+
+.startups {
+    display: grid;
+    grid-template-columns: 1.5fr 1.1fr;
+    column-gap: 30px;
+    margin-top: 30px;
+    align-items: center;
+    margin-right: -20px;
+        
+    img {
+        grid-row: 1 / 3;
+        grid-column: 2;
+        background-size: contain;
+        width: 100%;
+    }
+    
+    h4 {
+        grid-row: 1;
+        grid-column: 1;
+        align-self: flex-end;
+    }
+
+    .details {
+        padding: 20px 20px 20px 0;
+        margin-right: -60px;
+        background-color: white;
+        height: fit-content;
+
+        h5 {
+            margin: 0 0 10px 0;
+        }
+    } 
+}

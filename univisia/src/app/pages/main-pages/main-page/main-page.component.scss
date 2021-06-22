@@ -22,19 +22,33 @@ h2, .service-description, .black-btn {
     margin-left: 50px;
 }
 
-h2.active {
-    display: flex;
-    align-items: baseline;
+.list-item {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 12px 0;
+    padding-left: 50px;
+    cursor: pointer;
+    
+    h2 {
+        margin: 0 15px 0 0;
+    }
 
-    &::before {
-        display: block;
-        content: ' ';
-        background-image: url('../../../../assets/images/rectangle_orange.svg');
-        height: 35px;
-        width: 17px;
-        margin-left: -60px;
-        margin-right: 43.5px;
-        background-repeat: no-repeat;
+    &.active {
+        &::before {
+            display: block;
+            content: ' ';
+            background-image: url('../../../../assets/images/rectangle_orange.svg');
+            margin: 0px 50px 0 -58px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 48px;
+            width: 8px;
+        }
+    
+        .highlight {
+            color: $orange;
+        }
     }
 }
 

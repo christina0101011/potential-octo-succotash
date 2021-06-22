@@ -46,7 +46,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CasesPageComponent implements OnInit {
   @Input() cases: any;
   
-  public showContent: any;
+  public showContent = 0;
 
   constructor() { }
 

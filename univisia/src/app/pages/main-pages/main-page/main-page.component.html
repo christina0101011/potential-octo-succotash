@@ -3,22 +3,22 @@
     
     <div class="left-side">
         <div class="service-list">
-            <h2 (mouseenter)="currentService = 'startups'" (click)="currentService = 'startups'"
+            <div (click)="serviceIndex = -1" class="list-item"
                 [ngClass]="{active: currentService === 'startups'}">
-                Services for startups
-            </h2>
-            <h2 (mouseenter)="currentService = 'websites'" (click)="currentService = 'websites'"
+                <h2>Services for</h2> <h2 class="highlight">startups</h2>
+            </div>
+            <div (click)="serviceIndex = 0"  class="list-item"
                 [ngClass]="{active: currentService === 'websites'}">
-                Website development
-            </h2>
-            <h2 (mouseenter)="currentService = 'azure'" (click)="currentService = 'azure'"
+                <h2 class="highlight">Website</h2><h2>development</h2>
+            </div>
+            <div (click)="serviceIndex = 1"  class="list-item"
                 [ngClass]="{active: currentService === 'azure'}">
-                Azure services
-            </h2>
-            <h2 (mouseenter)="currentService = 'stuffing'" (click)="currentService = 'stuffing'"
+                <h2 class="highlight">Azure</h2><h2>services</h2>
+            </div>
+            <div (click)="serviceIndex = 2"  class="list-item"
                 [ngClass]="{active: currentService === 'stuffing'}">
-                Tech stuffing
-            </h2>
+                <h2 class="highlight">Tech</h2><h2>stuffing</h2>
+            </div>
         </div>
 
         <div class="service-description">

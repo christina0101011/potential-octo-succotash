@@ -34,15 +34,7 @@
         </div>
     </div>
    <div class="buttons">
-       <div> <!-- do not remove -->
-           <button (click)="decrementIndex()" class="arrow-btn text-tunnels text-orange"
-               *ngIf="showContent > 0">
-               <img src="../../../../assets/images/v_in_orange.svg" alt="">
-               Back
-           </button>
-       </div>
-       <button (click)="incrementIndex()" class="arrow-btn text-tunnels next text-orange"
-           *ngIf="showContent !== cases.length - 1">
+       <button (click)="incrementIndex()" class="arrow-btn text-tunnels next text-orange">
            <img src="../../../../assets/images/v_in_orange.svg" alt="">
            Next
        </button>

@@ -1,7 +1,7 @@
 <div class="cases-container">
     <div class="cases" *ngFor="let case of cases; let idx = index" [@enterAnimation]>
         <div class="description">
-            <h4 (mouseenter)="showContent = idx" (click)="showContent = idx" [ngClass]="{active: showContent === idx}">{{ case.project }}</h4>
+            <h4 class="pointer" (click)="showContent = idx" [ngClass]="{active: showContent === idx}">{{ case.project }}</h4>
             <div [@inOutAnimation] *ngIf="showContent === idx">
                 <div class="facts">
                     <div class="title">

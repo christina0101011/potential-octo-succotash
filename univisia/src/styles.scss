@@ -64,10 +64,15 @@ a {
     text-decoration: none;
     color: inherit;
     transition: color $transition;
+    cursor: pointer;
 
     &:hover {
         color: $orange;
     }
+}
+
+button {
+    cursor: pointer;
 }
 
 h5 {
@@ -98,6 +103,10 @@ p {
     margin: 0;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 .text-tunnels {
     font-family: "Tunnels";
 }
@@ -113,8 +122,8 @@ p {
 .center-letter {
     position: absolute;
     z-index: 1;
-    width: 17%;
-    right: 46%;
+    width: 15%;
+    right: 46.5%;
 }
 
 .bg-img {

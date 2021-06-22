@@ -19,9 +19,5 @@ export class MiniCasesPageComponent implements OnInit {
   incrementIndex(){
     this.showContent++
   }
-  
-  decrementIndex() {
-    this.showContent--
-  }
 
 }

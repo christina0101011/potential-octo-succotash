@@ -44,11 +44,18 @@ $border-thickness: 2px;
     }
 
     .bg-img {
-        width: 55vw;
-        height: auto;
+        background-image: url('../../../assets/images/contact_bg.png');
+        background-size: cover;
         
-        @media (min-width: 2000px) {
+        
+        @media (min-width: 2300px) {
             width: 53.5%;
+            height: 800px;
+        }
+        
+        @media (max-width: 2300px) {
+            width: 55vw;
+            height: 500px;
         }
     }
     

@@ -13,34 +13,11 @@ import { Component, Input, OnInit } from '@angular/core';
         ':leave', [style({opacity: 0}), animate('.2s linear', style({height: '10px' }))
       ])
     ]),
-    trigger(
-      'enterAnimation', [
-        transition(':enter', [
-          style({transform: 'translateX(100%)', opacity: 0}),
-          animate('500ms', style({transform: 'translateX(0)', opacity: 1}))
-        ]),
-        transition(':leave', [
-          style({transform: 'translateX(0)', opacity: 1}),
-          animate('500ms', style({transform: 'translateX(100%)', opacity: 0}))
-        ])
-      ]
-    ),
-      trigger('state', [
-        state(
-          'visible',
-          style({
-            opacity: '1'
-          })
-        ),
-        state(
-          'hidden',
-          style({
-            opacity: '0'
-          })
-        ),
-        transition('* => visible', [animate('500ms ease-out')]),
-        transition('visible => hidden', [animate('500ms ease-out')])
-      ])
+    trigger('toggle', [
+      state('true', style({ opacity: 1 })),
+      state('void', style({ opacity: 0 })),
+      transition(':enter', animate('500ms ease-in-out'))
+    ])
   ]
 })
 export class CasesPageComponent implements OnInit {

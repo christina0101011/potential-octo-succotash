@@ -9,12 +9,12 @@ $border-thickness: 2px;
     flex-wrap: wrap;
     
     .contact-form {
-        width: calc(40% - 150px);
+        width: calc(35% - 150px);
         min-width: 230px;
         align-self: center;
 
         input, .free-text {
-            height: 35px;
+            height: 45px;
             background-color: $silver;
             border: none;
             width: calc(100% - 40px);
@@ -40,6 +40,15 @@ $border-thickness: 2px;
             &:hover {
                 background-color: $orange;
             }
+        }
+    }
+
+    .bg-img {
+        width: 55vw;
+        height: auto;
+        
+        @media (min-width: 2000px) {
+            width: 53.5%;
         }
     }
     

@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MainServiceService {
   public currentPage = new BehaviorSubject<string>('services');
+  public serviceBlock = new Subject();
 
   public breakpoint = 1100;
 

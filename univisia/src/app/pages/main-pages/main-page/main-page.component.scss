@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 40% auto;
     column-gap: 150px;
-    margin-top: 80px;
+    margin-top: 40px;
     position: relative;
 }
 
@@ -26,7 +26,6 @@ h2, .service-description, .black-btn {
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
-    margin: 12px 0;
     padding-left: 50px;
     cursor: pointer;
     
@@ -53,7 +52,19 @@ h2, .service-description, .black-btn {
 }
 
 .service-description {
-    height: 230px;
+    margin-top: 30px;
+    
+    @media (min-width: 1400px) {
+        height: 170px;
+    }
+    
+    @media (max-width: 1400px) {
+        height: 230px;
+    }
+
+    p {
+        text-align: justify;
+    }
 }
 
 .black-btn {
@@ -61,8 +72,8 @@ h2, .service-description, .black-btn {
     color: white;
     transition: background-color $transition;
     border: none;
-    height: 35px;
-    width: 100px;
+    height: 45px;
+    width: 160px;
     font-size: 16px;
     
     &:hover {

@@ -15,9 +15,13 @@
 .top {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    padding-bottom: 30px;
+    align-items: center;
+    padding-bottom: 25px;
     border-bottom: 2px solid black;
+
+    .menu-img {
+        height: 40px;
+    }
 }
 
 .menu-container {
@@ -51,7 +55,7 @@
             height: 35px;
             width: 17px;
             margin-left: 25px;
-            margin-right: 10px;
+            margin-right: 5px;
             background-repeat: no-repeat;
             background-size: contain;
         }

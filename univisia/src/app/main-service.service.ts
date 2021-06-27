@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class MainServiceService {
   public currentPage = new BehaviorSubject<string>('services');
   public serviceBlock = new Subject();
+  public miniMenuState = new BehaviorSubject<any>('fit-content');
 
   public breakpoint = 1100;
 

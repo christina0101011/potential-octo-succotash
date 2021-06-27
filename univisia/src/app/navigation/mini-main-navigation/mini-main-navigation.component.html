@@ -1,10 +1,10 @@
 <img src="../../../assets/images/menu_icon.svg" alt=""
-    *ngIf="!menuOpen" (click)="menuOpen = !menuOpen">
+     (click)="cangeMenuState()" [@rotatedState]="state">
 
-<div class="open-menu" *ngIf="menuOpen" [@enterAnimation]>
+<div id="open-menu" class="open-menu" *ngIf="menuOpen" [@enterAnimation]>
     <div class="top">
         <img class="menu-img" src="../../../assets/images/menu.svg" alt="">
-        <img src="../../../assets/images/close.svg" alt="" (click)="menuOpen = !menuOpen">
+        <img src="../../../assets/images/close.svg" alt="" (click)="cangeMenuState()">
     </div>
     <div class="menu-container">
         <div class="menu-item" (click)="menuOpen = !menuOpen">

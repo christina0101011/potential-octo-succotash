@@ -17,7 +17,11 @@ export class MiniCasesPageComponent implements OnInit {
   }
 
   incrementIndex(){
-    this.showContent++
+    if (this.showContent < this.cases.length - 1) {
+      this.showContent++
+    } else {
+      this.showContent = 0
+    }
   }
 
 }

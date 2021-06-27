@@ -4,6 +4,12 @@
 
 .content {
     position: relative;
+    
+    &.fit-menu {
+        overflow: hidden;
+        padding: 0;
+        height: 0;
+    }
 }
 
 @include resize-800-1100 (large-up) {

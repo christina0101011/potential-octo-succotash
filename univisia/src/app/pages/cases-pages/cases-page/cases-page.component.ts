@@ -20,6 +20,7 @@ import { Component, Input, OnInit } from '@angular/core';
     ])
   ]
 })
+
 export class CasesPageComponent implements OnInit {
   @Input() cases: any;
   
@@ -28,5 +29,7 @@ export class CasesPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {  }
+
+  getNext() {}
 
 }

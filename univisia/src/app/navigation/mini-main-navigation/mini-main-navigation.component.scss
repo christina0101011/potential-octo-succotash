@@ -2,14 +2,15 @@
 
 
 .open-menu {
-    position: fixed;
-    z-index: 3;
-    width: calc(100% - 50px);
-    height: 100vh;
-    background-color: white;
+    position: absolute;
     left: 0;
     top: 0;
-    padding: 25px;
+    z-index: 3;
+    width: calc(100vw - 60px);
+    max-height: calc(100vh - 50px);
+    min-height: fit-content;
+    background-color: white;
+    padding: 25px 25px 0 25px;
 }
 
 .top {
@@ -71,6 +72,7 @@
 
     .publics {
         margin-left: 25px;
+        padding-bottom: 50px;
 
         img {
             margin-right: 15px;
